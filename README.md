@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/AsavarTzeth/ansible-role-hosts.svg?branch=master)](https://travis-ci.org/AsavarTzeth/ansible-role-hosts)
+
 Ansible hosts(5) Role
 =======================
 
