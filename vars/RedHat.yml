@@ -1,0 +1,16 @@
+---
+hosts_loopback_ipv4:
+  "127.0.0.1":
+    - localhost
+    - localhost.localdomain
+    - localhost4
+    - localhost4.localdomain4
+hosts_loopback_ipv6:
+  "::1":
+    - localhost
+    - localhost.localdomain
+    - localhost6
+    - localhost6.localdomain6
+
+# Enables local network hostname resolution
+hosts_map_hostname: false

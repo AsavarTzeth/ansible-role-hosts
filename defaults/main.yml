@@ -1,0 +1,17 @@
+---
+hosts_map: {}
+hosts_map_ipv6: true
+
+# Default ip address, canonical hostname and aliases for loopback
+hosts_loopback_ipv4:
+  "127.0.0.1":
+    - localhost
+hosts_loopback_ipv6:
+  "::1":
+    - localhost
+
+# Enables local network hostname resolution
+hosts_map_hostname: true
+
+# Defines what address the local hostname should resolve to
+hosts_map_hostname_addr: 127.0.1.1

@@ -1,0 +1,24 @@
+{{ ansible_managed | comment }}
+
+{% for k, v in hosts_loopback_ipv4.iteritems() %}
+{{ k }} {{ v | join(' ') }}
+{% endfor %}
+{% if hosts_map_hostname %}
+{{ hosts_map_hostname_addr }} {{ ansible_hostname }}
+{% endif %}
+
+{% if hosts_map_ipv6 %}
+{% for k, v in hosts_loopback_ipv6.iteritems() %}
+{{ k }} {{ v | join(' ') }}
+{% endfor %}
+{% if ansible_os_family == 'Debian' %}
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+{% endif %}
+{% endif %}
+
+{% for k, v in hosts_map.iteritems() %}
+{{ k }} {{ v | join(' ') }}
+{% endfor %}

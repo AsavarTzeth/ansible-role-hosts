@@ -1,0 +1,28 @@
+galaxy_info:
+  author: Patrik Nilsson
+  description: /etc/hosts, hosts(5) management role
+  license: BSD
+  min_ansible_version: 2.2
+  github_branch: master
+
+  platforms:
+    - name: ArchLinux
+      versions:
+        - all
+        - any
+    - name: Ubuntu
+      versions:
+      - trusty
+      - xenial
+      - yakkety
+    - name: Debian
+      versions:
+      - jessie
+      - wheezy
+    - name: EL
+      versions:
+      - 7
+
+  galaxy_tags: ['hosts','localhost','loopback']
+
+dependencies: []

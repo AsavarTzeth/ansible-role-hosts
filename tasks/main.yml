@@ -1,0 +1,16 @@
+---
+- include_vars: "{{ item }}"
+  with_first_found:
+    - files:
+        - "{{ ansible_distribution }}.yml"
+        - "{{ ansible_os_family }}.yml"
+      skip: true
+  become: false
+  tags: hosts
+
+- name: setup /etc/hosts
+  template:
+    src: hosts.j2
+    dest: /etc/hosts
+  become: true
+  tags: hosts

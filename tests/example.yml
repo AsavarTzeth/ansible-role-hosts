@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  remote_user: root
+  roles:
+    - role: ansible-role-hosts
+      hosts_map_ipv6: false
+      hosts_map_hostname: true
+      hosts_map_hostname_addr: 127.0.0.1
+      hosts_map:
+        "192.168.1.1":
+          - foo
+        "192.168.1.2":
+          - bar
