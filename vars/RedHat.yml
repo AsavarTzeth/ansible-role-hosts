@@ -11,6 +11,3 @@ hosts_loopback_ipv6:
     - localhost.localdomain
     - localhost6
     - localhost6.localdomain6
-
-# Enables local network hostname resolution
-hosts_map_hostname: false

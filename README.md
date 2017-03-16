@@ -32,7 +32,7 @@ Role Variables
     # However, application specific issues have been reported solved this way.
 
     # Enables local network hostname resolution
-    hosts_map_hostname: (default: false) (Debian: true)
+    hosts_map_hostname: (default: true)
 
     # Defines what address the local hostname should resolve to
     hosts_map_hostname_addr: (default: 127.0.1.1)

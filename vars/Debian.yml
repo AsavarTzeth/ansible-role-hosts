@@ -7,6 +7,3 @@ hosts_loopback_ipv6:
     - localhost
     - ip6-localhost
     - ip6-loopback
-
-# Enables local network hostname resolution
-hosts_map_hostname: true
