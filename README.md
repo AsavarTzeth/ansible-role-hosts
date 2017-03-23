@@ -45,7 +45,7 @@ None
 Example Playbook
 ----------------
 
-1 ) Add custom ip address mappings, using a dictionary:
+Add custom ip address mappings, using a dictionary:
 
     - hosts: all
       roles:
@@ -56,7 +56,7 @@ Example Playbook
             "192.168.1.2":
               - bar
 
-2 ) Add local hostname to hosts file, while disabling ipv6 loopback:
+Add local hostname to hosts file, while disabling ipv6 loopback:
 
     - hosts: all
       roles:
